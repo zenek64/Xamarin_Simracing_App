@@ -2,37 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Simracing_App.MainPage">
+   
+    <Frame BackgroundColor="White">
+        <StackLayout Padding="30,24,30,24" Spacing="10">
+            <Label Text="Race length" FontSize="Title" TextColor="Black"/>
+            <Entry x:Name="race_length" Placeholder="Race Length (in minutes)" PlaceholderColor="Black"/>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <!--<StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
-                </ContentView>
-            </StackLayout>
-        </StackLayout>-->
-        <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Race length" FontSize="Title" TextColor="Black"/>
-                <Entry x:Name="race_length" Keyboard="Numeric" Placeholder="Race Length (in minutes)" PlaceholderColor="Black" BackgroundColor="#8892b0"/>
-                <!--TextChanged="race_length_TextChanged" Completed="HandleEnterPress"-->
-                <Entry x:Name="lap_time_min" Keyboard="Numeric" Placeholder="Lap Time (Min)" PlaceholderColor="Black" BackgroundColor="#8892b0"/>
-                <Entry x:Name="lap_time_sec" Keyboard="Numeric" Placeholder="Lap Time (Sec)" PlaceholderColor="Black" BackgroundColor="#8892b0"/>
-                <Entry x:Name="fuel_per_lap" Keyboard="Numeric" Placeholder="Fuel per Lap" PlaceholderColor="Black" BackgroundColor="#8892b0"/>
-                <Label Text="Minimum Fuel" TextColor="Black"/>
-                <Label x:Name="result" Text="0" TextColor="Black"/>
-                <Label Text="Recommended Fuel" TextColor="Black"/>
-                <Label x:Name="result_rec" Text="0" TextColor="Black"/>
-                <Label Text="Safe" TextColor="Black"/>
-                <Label x:Name="result_safe" Text="0" TextColor="Black"/>
-                <Button Text="Calculate" CornerRadius="10" Clicked="Button_Clicked"/>
+            <Grid RowDefinitions="*" ColumnDefinitions="5*,5*">
+                <Entry x:Name="lap_time_min" Grid.Column="0" Placeholder="Lap Time (Min)" PlaceholderColor="Black"/>
+                <Entry x:Name="lap_time_sec" Grid.Column="1" Placeholder="Lap Time (Sec)" PlaceholderColor="Black"/>
+            </Grid>
 
-            </StackLayout>
-        </ScrollView>
-    </Grid>
+            <Entry x:Name="fuel_per_lap" Placeholder="Fuel per Lap" PlaceholderColor="Black" />
+            <Label Text="Minimum Fuel" TextColor="Black"/>
+            <Label x:Name="result" Text="0" TextColor="Black"/>
+            <Label Text="Recommended Fuel" TextColor="Black"/>
+            <Label x:Name="result_rec" Text="0" TextColor="Black"/>
+            <Label Text="Safe" TextColor="Black"/>
+            <Label x:Name="result_safe" Text="0" TextColor="Black"/>
+            <Button Text="Calculate" Clicked="Button_Clicked" BorderWidth="2" BorderColor="Black" TextColor="Black" BackgroundColor="White"/>
+        </StackLayout>
+    </Frame>    
 
 </ContentPage>

@@ -10,29 +10,13 @@ namespace Simracing_App
 {
     public partial class MainPage : ContentPage
     {
-        public int time;
-        public int min;
-        public int sec;
-        public double fuel;
+        private int time;
+        private int min;
+        private int sec;
+        private double fuel;
         public MainPage()
         {
             InitializeComponent();
-        }
-
-        private void HandleEnterPress(object sender, EventArgs e)
-        {
-            //Console.WriteLine("test");
-            //result.Text= race_length.Text;
-
-        }
-
-        private void race_length_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //Console.WriteLine(race_length.Text);
-            //a = int.Parse(race_length.Text.ToString());
-            //a++;
-            //result.Text = a.ToString();
-
         }
 
         private void Button_Clicked(object sender, EventArgs e)
