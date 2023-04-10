@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Simracing_App.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -37,6 +38,10 @@ namespace Simracing_App
             result.Text = minimum.ToString();
             result_rec.Text = recommended.ToString();
             result_safe.Text = safe.ToString();
+        }
+        private void OnButtonClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new TrackRecordView());
         }
     }
 }
