@@ -1,0 +1,26 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Simracing_App.Views.CalculatorView">
+
+    <Frame BackgroundColor="White">
+        <StackLayout Padding="30,24,30,24" Spacing="10">
+            <Label Text="Race length" FontSize="Title" TextColor="Black"/>
+            <Entry x:Name="race_length" Placeholder="Race Length (in minutes)" PlaceholderColor="Black"/>
+
+            <Grid RowDefinitions="*" ColumnDefinitions="5*,5*">
+                <Entry x:Name="lap_time_min" Grid.Column="0" Placeholder="Lap Time (Min)" PlaceholderColor="Black"/>
+                <Entry x:Name="lap_time_sec" Grid.Column="1" Placeholder="Lap Time (Sec)" PlaceholderColor="Black"/>
+            </Grid>
+
+            <Entry x:Name="fuel_per_lap" Placeholder="Fuel per Lap" PlaceholderColor="Black" />
+            <Label Text="Minimum Fuel" TextColor="Black"/>
+            <Label x:Name="result" Text="0" TextColor="Black"/>
+            <Label Text="Recommended Fuel" TextColor="Black"/>
+            <Label x:Name="result_rec" Text="0" TextColor="Black"/>
+            <Label Text="Safe" TextColor="Black"/>
+            <Label x:Name="result_safe" Text="0" TextColor="Black"/>
+            <Button Text="Calculate" Clicked="Button_Clicked" BorderWidth="2" BorderColor="Black" TextColor="Black" BackgroundColor="White"/>
+        </StackLayout>
+    </Frame>
+
+</ContentPage>
