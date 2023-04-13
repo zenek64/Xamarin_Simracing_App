@@ -25,6 +25,9 @@
                         <Label Text="{Binding TrackName}"
                                VerticalTextAlignment="Center"
                                HorizontalOptions="StartAndExpand" />
+                        <Label Text="{Binding CarName}"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="StartAndExpand" />
                         <!--<Image Source="check.png"
                                HorizontalOptions="End"
                                IsVisible="{Binding Done}" />-->

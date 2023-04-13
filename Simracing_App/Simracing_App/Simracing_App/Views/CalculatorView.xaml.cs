@@ -32,8 +32,8 @@ namespace Simracing_App.Views
             double safe;
 
             minimum = (((_time * 60) / ((_min * 60) + _sec)) * _fuel) + _fuel;
-            recommended = (((_time * 60) / ((_min * 60) + _sec)) * _fuel) + (_fuel * 2);
-            safe = (((_time * 60) / ((_min * 60) + _sec)) * _fuel) + (_fuel * 3);
+            recommended = minimum + _fuel;
+            safe = recommended + _fuel;
 
             result.Text = minimum.ToString();
             result_rec.Text = recommended.ToString();

@@ -12,6 +12,5 @@ namespace Simracing_App.Models
         public int ID { get; set; }
         public string TrackName { get; set; }
         public string CarName { get; set; }
-    
     }
 }
