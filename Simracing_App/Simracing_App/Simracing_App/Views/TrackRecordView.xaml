@@ -28,6 +28,15 @@
                         <Label Text="{Binding CarName}"
                                VerticalTextAlignment="Center"
                                HorizontalOptions="StartAndExpand" />
+                        <Label Text="{Binding Minutes}"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="StartAndExpand" />
+                        <Label Text="{Binding Seconds}"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="StartAndExpand" />
+                        <Label Text="{Binding Milliseconds }"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="StartAndExpand" />
                         <!--<Image Source="check.png"
                                HorizontalOptions="End"
                                IsVisible="{Binding Done}" />-->

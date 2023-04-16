@@ -9,6 +9,12 @@
         <Entry Text="{Binding TrackName}" />
         <Label Text="Car Name" />
         <Entry Text="{Binding CarName}" />
+        <Label Text="Minutes" />
+        <Entry Text="{Binding Minutes}" />
+        <Label Text="Seconds" />
+        <Entry Text="{Binding Seconds}" />
+        <Label Text="Milliseconds" />
+        <Entry Text="{Binding Milliseconds}" />
         <Button Text="Save"
                 Clicked="OnSaveClicked" />
         <Button Text="Delete"
