@@ -19,7 +19,7 @@
             <Label x:Name="result_rec" Text="0" TextColor="Black"/>
             <Label Text="Safe" TextColor="Black"/>
             <Label x:Name="result_safe" Text="0" TextColor="Black"/>
-            <Button Text="Calculate" Clicked="Button_Clicked" BorderWidth="2" BorderColor="Black" TextColor="Black" BackgroundColor="White"/>
+            <Button Text="Calculate" Clicked="Button_Clicked" Style="{StaticResource PrimaryButton}"/>
         </StackLayout>
     </Frame>
 
